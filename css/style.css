@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "arial";
+}
+
+.container {
+  background-color: #e9e9e9;
+}
+
+.header {
+  background-color: black;
+  height: 100px;
+}
+
+main {
+  margin: -60px auto;
+  height: 1200px;
+  width: 980px;
+  background-color: #fffdda;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 1;
+}
+
+main > * {
+  display: flex;
+}
+
+.contacs {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(221, 221, 221);
+  padding: 5px 20px;
+  margin-top: 10px;
+  width: 100%;
+  order: 0;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  order: 1;
+}
+.img-logo {
+  align-items: center;
+}
+
+.nav {
+  background-color: rgb(36, 36, 36);
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  order: 2;
+}
+
+.nav-link {
+  padding: 18px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid gray;
+}
+
+.nav-link:last-child {
+  border: none;
+}
+
+.nav-link.active {
+  background-color: #f6cf36;
+  color: black;
+  font-weight: bolder;
+}
+
+.form {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  order: 3;
+}
+
+.form-fields,
+.form-column {
+  display: flex;
+}
+
+.form-column {
+  flex-flow: column;
+}
+
+.form .field {
+  padding: 15px;
+  width: 50%;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+}
+
+.form .input {
+  padding: 5px 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  background-color: rgb(221, 221, 255);
+  border: 1px solid rgb(202, 202, 202);
+  width: 400px;
+  height: 30px;
+}
+
+.button {
+  padding: 10px 70px;
+  margin-top: 25px;
+  background-color: #f6cf36;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.table-wrapper {
+  order: 4;
+}
+
+table {
+  display: block;
+  border: 1px solid #ebdaa5;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 460px;
+}
+
+th,
+td {
+  padding: 10px 40px;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(248, 228, 172);
+}
+
+.footer {
+  background-color: black;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  margin-top: 60px;
+  color: #fff;
+  width: 980px;
+}
